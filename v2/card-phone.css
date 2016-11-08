@@ -1,0 +1,160 @@
+/* A simple guide to responsive design. Made by Adam Kaplan.
+   (http://www.adamkaplan.me/grid/)
+   ========================================================================== */
+
+
+/* Layout
+   ========================================================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font: 100%/1.5 "Century Gothic", sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 40rem) {
+  html { font-size: 112%; }
+}
+
+@media (min-width: 64rem) {
+  html { font-size: 120%; }
+}
+
+body {
+  background-color: #00A854;
+  color: #eee;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 46rem;
+  width: 96%;
+}
+
+
+/* Clearfix by Nicolas Gallagher
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+.l0.c0 { transform: translate(27px, 37px); } /* à cause effet optique */
+
+/* One card */
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #222222;
+  float: left;
+  height: 132px;
+  margin: 0 0 20px 20px;
+  overflow: none;
+  position: relative;
+  width: 96px;
+}
+/* A Red card */
+.red span { color: #d30000; }
+
+#maquette .card { border-radius: 0; margin: 0; }
+#maquette > div { margin-left: 20px; }
+
+.card .c0 {
+  display: block;
+  font-family: "Consolas" !important;
+  font-size: 2.9rem;
+  line-height: 50px;
+  margin: 0;
+  min-width: 38px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.card .c0 {
+  font-size: 4rem;
+  line-height: 100px;
+  min-width: 64px;
+}
+
+/* Top Rank */
+.card .tr {
+  display: block;
+  font-family: "Arial Narrow" !important;
+  font-size: 1.9rem;
+  max-width: 1rem;
+  min-width: 1rem;
+  position: absolute;
+  text-align: center;
+  transform: translate(3px, -5px) scaleX(1);
+}
+/* Top Rank 10 */
+.card.ten .tr   { transform: translate(0px, -5px) scaleX(.8); letter-spacing: -0.14em; }
+.card.ace .tr   { transform: translate(3px, -5px) scaleX(.9); }
+.card.jack .tr  { transform: translate(2px, -5px) scaleX(.9); }
+.card.queen .tr { transform: translate(2px, -5px) scaleX(.7); }
+.card.king .tr  { transform: translate(2px, -5px) scaleX(.7); }
+/* Top Color */
+.card .tc {
+  display: block;
+  font-family: "Consolas" !important;
+  font-size: 1.8rem;
+  max-width: 1rem;
+  min-width: 1rem;
+  position: absolute;
+  text-align: center;
+  transform: translate(3px, 28px);
+}
+
+
+/* Right Color */
+.card .rc {
+  display: block;
+  font-family: "Consolas" !important;
+  font-size: 1.8rem;
+  max-width: 1rem;
+  min-width: 1rem;
+  position: absolute;
+  text-align: center;
+  transform: translate(70px, -5px);
+}
+
+.figure.card .tc {
+  display: none;
+}
+
+.figure div {
+  display: block;
+  height: 75px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  transform: translate(8px, 49px);
+  width: 80px;
+}
+
+.figure div img {
+  margin-left: -316px;
+  margin-top: -416px;
+  transform: scaleX(.88) scaleY(.88);
+}
+
+/* Les Piques regardent tous à droite */
+#spade .figure div img {
+  margin-left: -320px;
+  transform: scaleX(.85) scaleY(.88);
+}

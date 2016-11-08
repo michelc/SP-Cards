@@ -1,0 +1,122 @@
+/* A simple guide to responsive design. Made by Adam Kaplan.
+   (http://www.adamkaplan.me/grid/)
+   ========================================================================== */
+
+
+/* Layout
+   ========================================================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font: 100%/1.5 "Century Gothic", sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 40rem) {
+  html { font-size: 112%; }
+}
+
+@media (min-width: 64rem) {
+  html { font-size: 120%; }
+}
+
+body {
+  background-color: #00A854;
+  color: #eee;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 46rem;
+  width: 96%;
+}
+
+
+/* Clearfix by Nicolas Gallagher
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+
+
+.ligne
+{
+  margin-left: 10px;
+}
+.ligne div
+{
+  border: 7px solid white;
+  height: 318px;
+  width: 230px;
+  overflow: hidden;
+  float: left;
+}
+.ligne div img
+{
+  margin-left: -264px;
+  margin-top: -374px;
+}
+.ligne div.png
+{
+  border: 0;
+}
+.ligne div.png img
+{
+  margin: 0;
+}
+
+/*
+#HA { margin-top: -397px; }
+#H2 { margin-top: -397px; }
+#H3 { margin-top: -397px; }
+#H4 { margin-top: -395px; }
+#H5 { margin-top: -397px; }
+#H6 { margin-top: -397px; }
+#H7 { margin-top: -397px; }
+#H8 { margin-top: -397px; }
+#H9 { margin-top: -397px; }
+#HX { margin-top: -397px; }
+#HJ { margin-top: -397px; }
+#HQ { margin-top: -397px; }
+#HK { margin-top: -397px; }
+*/
+
+
+.line1 { top: 0px; }
+.line2 { top: 0px; }
+.line3 { top: 31.25px; }
+.line4 { top: 0px; }
+.line5 { top: 62.5px; }
+.line6 { top: 0px; }
+.line7 { top: 93.75px; }
+.line8 { top: 0px; }
+.line9 { top: 125px; }
+
+.col1 { left: 0px; }
+.col2 { left: 37.5px; }
+.col3 { left: 75px; }
+
+.carte {
+  border: 10px solid pink;
+  width: 200px
+  height 200px;
+}
+
+.carte span {
+  position: relative;
+}
