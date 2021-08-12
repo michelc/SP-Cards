@@ -52,6 +52,11 @@ body {
 .clearfix { *zoom: 1; }
 
 
+#capture {
+  height: 792px;
+  width: 2016px;
+}
+
 .l0.c0 { transform: translate(40px, 46px); } /* à cause effet optique */
 
 .l1.c1 { transform: translate(25px, 10px); }
@@ -165,6 +170,18 @@ body {
   position: absolute;
   text-align: center;
   transform: translate(3px, 25px);
+}
+
+/* Right Color */
+.card .rc {
+  display: block;
+  font-family: "Consolas" !important;
+  font-size: 1.6rem;
+  max-width: 1rem;
+  min-width: 1rem;
+  position: absolute;
+  text-align: center;
+  transform: translate(122px, -5px);
 }
 
 /* Bottom Rank */

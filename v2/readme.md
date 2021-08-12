@@ -1,7 +1,7 @@
 Création cartes pour Solitaire-Play
 ===================================
 
-Version n° 2 du 20/07/2016
+Version n° 2b du 08/07/2021
 
 
 * card-game.html          Base HTML pour construire card-game.png
@@ -21,10 +21,14 @@ Version n° 2 du 20/07/2016
   - card-phone            idem après optimisation
 
 
-Optimisation
+Optimisation (C:\tools\TinyPNG\pz24.bat)
 ------------
 > pngquant --speed 1 --nofs 24 %~n1.png -o %~n1-min1.png
 > zopflipng %~n1-min1.png %~n1-min2.png
+
+
+
+https://www.diffchecker.com/image-diff/
 
 
 Attention

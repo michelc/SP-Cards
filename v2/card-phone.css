@@ -52,6 +52,11 @@ body {
 .clearfix { *zoom: 1; }
 
 
+#capture {
+  height: 528px;
+  width: 1344px;
+}
+
 .l0.c0 { transform: translate(27px, 37px); } /* à cause effet optique */
 
 /* One card */
